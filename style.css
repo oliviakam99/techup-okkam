@@ -1,0 +1,23 @@
+
+h1 {
+    color:khaki;
+    background-color:darkseagreen;
+
+    text-align:center;
+    border: 20px pink dotted;
+
+    margin-bottom: 100px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.title {
+    background-color:mistyrose;
+
+}
+
+#important {
+    color:mediumaquamarine;
+}
