@@ -15,6 +15,11 @@ h1 {
 
 .title {
     background-color:mistyrose;
+    text-align: center;
+    border: 20px salmon dotted;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
