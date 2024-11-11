@@ -35,7 +35,7 @@ app.get('/', async function(req, res) {
 
 
         // Render the homepage with all the blog posts
-        await res.render('pages/home', { blogs: blogs });
+        await res.render('pages/frontPage', { blogs: blogs });
       } catch (error) {
         res.render('pages/home');
         console.log(error);
@@ -45,6 +45,11 @@ app.get('/', async function(req, res) {
 // About page
 app.get('/about', function(req, res) {
     res.render('pages/about');
+});
+
+// oli page
+app.get('/detail', function(req, res) {
+  res.render('pages/sportDetails');
 });
 
 // New post page
