@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.rating-score {
+    font-size: 18px;
+    color: #666;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.rating p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.star-rating {
+    direction: rtl; /* Reverse order for CSS styling */
+    display: inline-flex;
+}
+
+.star-rating input[type="checkbox"] {
+    display: none; /* Hide the checkboxes */
+}
+
+.star-rating label {
+    font-size: 24px;
+    color: #ccc; /* Default color for stars */
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+
+.star {
+    font-size: 24px;
+    color: #1E90FF;
+}
+
+.listings, .testimonials {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px; /* Add space between each listing */
+
+    }
+    
+}
+
+.listings li, .testimonials li {
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #1E90FF;
+}
+
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

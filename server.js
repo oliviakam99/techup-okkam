@@ -47,9 +47,19 @@ app.get('/about', function(req, res) {
     res.render('pages/about');
 });
 
-// oli page
+// Details page
 app.get('/detail', function(req, res) {
   res.render('pages/sportDetails');
+});
+
+// Profile page
+app.get('/profile', function(req, res) {
+  res.render('pages/zzmonsterProfile');
+});
+
+// FAQs page
+app.get('/faqs',function(req,res) {
+  res.render('pages/faqs');
 });
 
 // New post page
