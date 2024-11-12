@@ -58,7 +58,7 @@ body {
     width: 45%;
 }
 .info-box img {
-    width: 200px;
+    width: 50px;
     height: auto;
     display: block;
     margin-bottom: 10px;
@@ -72,5 +72,4 @@ body {
     font-size: 14px;
     color: #666;
 }
-
 
