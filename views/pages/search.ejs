@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    <link rel="stylesheet" href="/css/searchStyle.css" >
+    <link rel="stylesheet" href="/css/navBarStyle.css" >
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5N49F1ZJB2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5N49F1ZJB2');
+</script>
+
+</head> 
+
+<body>
+
+    <!-- Navbar which can be reused across other pages -->
+    <%- include('../partials/navbar'); %>
+  <div class="container">
+
+
+        <div class="search-container">
+            <h1>Find Your Sport</h1>
+            <form action="search_results.html" method="GET">
+                <!-- Search bar for typing in the type of sport -->
+                <label for="sport-name">Sport Name:</label>
+                <input type="text" id="sport-name" name="sport-name" placeholder="Type in a sport (e.g., tennis, soccer)" required>
+        
+                <!-- Dropdown for location filter -->
+                <label for="location">Location:</label>
+                <select id="location" name="location">
+                    <option value="">Select Location</option>
+                    <option value="northeast">Northeast</option>
+                    <option value="east">East</option>
+                    <option value="west">West</option>
+                    <option value="central">Central</option>
+                    <!-- Add more locations as needed -->
+                </select>
+        
+        
+                <!-- Search button -->
+                
+                <a href="/zzmonsterProfile" class="button" role="button">Search</a>
+
+            </form>
+        </div>
+        
+        </body>
+        </html>

@@ -62,6 +62,11 @@ app.get('/faqs',function(req,res) {
   res.render('pages/faqs');
 });
 
+// Search page
+app.get('/search',function(req,res) {
+  res.render('pages/search');
+});
+
 // New post page
 app.get('/new', function(req, res) {
     res.render('pages/new');
