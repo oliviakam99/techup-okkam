@@ -19,6 +19,75 @@ app.use(express.urlencoded({extended: true}));
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient();
 
+const sportsToUser = {
+  'Tennis': ['Jane', 'John'],
+  'Pickleball': ['Tim'],
+  'Golf' : ['Natalie', 'Joshua'],
+  'Surfboarding': ['Elijah']
+
+}
+const userProfileData = {
+  'Jane': {
+    name: 'Jane',
+    listings: [
+      {
+        name: 'Tennis Racket [Renting for 10 months]',
+        description: 'Brand: Dunlop CX 200 Tour 18x20',
+        imgUrl: '/images/tennis.jpg'
+      }
+    ],
+    testimonials: [
+      'good',
+      '1 star'
+    ]
+  }, 
+  'John': {
+    name: 'John',
+    listings: [
+      {
+        name: 'Tube of balls [Renting for 8 months]',
+        imgUrl: '/images/tennis.jpg'
+      }
+    ]
+  },
+  'Tim': {
+    name: 'Tim',
+    listings: [
+      {
+        name: 'Pickleball paddle (Pro Elongated Control) and 12 balls [Renting for 6 months]',
+        imgUrl:'/images/pickleball.jpg'
+      }
+    ]
+  },
+  'Natalie': {
+    name:'Natalie',
+    listings: [
+      {
+        name: 'Golf clubs and tees [Renting for 6 months]',
+        imgUrl:'/images/golfclubs.jpg'
+      }
+    ]
+  },
+  'Joshua': {
+    name: 'Joshua',
+    listings: [
+      {
+        name: 'Golf putter [Renting for 4 months]',
+        imgUrl: 'images/golfputter.jpg'
+      }
+    ]
+  },
+  'Elijah': {
+    name: 'Elijah',
+    listings: [
+      {
+        name: 'Surfboard [Renting for 1 year]',
+        imgUrl: 'images/surfboard.jpg'
+      }
+    ]
+  }
+}
+
 // Main landing page
 app.get('/', async function(req, res) {
 
@@ -54,7 +123,8 @@ app.get('/detail', function(req, res) {
 
 // Profile page
 app.get('/profile', function(req, res) {
-  res.render('pages/zzmonsterProfile');
+  const profileName = req.query['name'];
+  res.render('pages/zzmonsterProfile', {profileName, userProfileData});
 });
 
 // FAQs page
@@ -70,6 +140,12 @@ app.get('/search',function(req,res) {
 // New post page
 app.get('/new', function(req, res) {
     res.render('pages/new');
+});
+
+app.get('/search_results', function(req, res) {
+  const sportName = req.query['sport-name'];
+  const location = req.query['location'];
+  res.render('pages/search_results', { sportName, location, sportsToUser, userProfileData});
 });
 
 // Create a new post

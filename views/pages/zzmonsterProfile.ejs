@@ -23,9 +23,9 @@
     <%- include('../partials/navbar'); %>
 
 <div class="profile-container">
-    <h1>Profile: zzMonster <span class="rating-score">4.9/5</span></h1>
+    <h1>Profile: <%= profileName %> <span class="rating-score">4.9/5</span></h1>
 
-    <div class="rating">
+    <!-- <div class="rating">
         <p>Rate me:</p>
         <div class="star-rating">
             <input type="checkbox" id="star5" name="rating" value="5">
@@ -43,16 +43,27 @@
             <input type="checkbox" id="star1" name="rating" value="1">
             <label for="star1" title="1 star">&#9733;</label>
         </div>
-    </div>
+    </div> -->
     
     
 
     <h2>Listings</h2>
     <ul class="listings">
-        <li>Renting my tennis racket and a tube of balls</li>
+
+        <% for(let i=0; i<userProfileData[profileName].listings.length; i++) { %>
+            <li class="card">
+                <div class="card-content">
+                <p><%= userProfileData[profileName].listings[i].name %></p>
+                <img src="<%= userProfileData[profileName].listings[i].imgUrl %>" alt="Tennis Shoes" width="400">
+                </div>
+            </li>
+        <% } %>
+
+        <!-- <li>Renting my tennis racket and a tube of balls</li>
         <div class="card">
             <img src="/images/tennis.jpg" alt="Tennis Shoes" width="400">
-            <div class="card-content">
+            <div class="card-content"></div>
+        </div>
         <li>Renting my soccer boots</li>
         <div class="card">
             <img src="/images/soccer.jpg" alt="Soccer Shoes" width="400" height="400">
@@ -60,7 +71,7 @@
         <li>Renting my surfboard</li>
         <div class="card">
             <img src="/images/surfboard.jpg" alt="Surfboard" width="400"
-            <div class="card-content">
+            <div class="card-content"> -->
     </ul>
 
     <h2>Testimonials</h2>

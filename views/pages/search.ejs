@@ -30,10 +30,17 @@
 
         <div class="search-container">
             <h1>Find Your Sport</h1>
-            <form action="search_results.html" method="GET">
-                <!-- Search bar for typing in the type of sport -->
-                <label for="sport-name">Sport Name:</label>
-                <input type="text" id="sport-name" name="sport-name" placeholder="Type in a sport (e.g., tennis, soccer)" required>
+            <form action="search_results" method="GET">
+                <!-- Dropdown for sport filter -->
+                <label for="sport-name">Sport-name:</label>
+                <select id="sport-name" name="sport-name">
+                    <option value="">Select Sport</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Pickleball">Pickleball</option>
+                    <option value="Golf">Golf</option>
+                    <option value="Surfboarding">Surfboarding</option>
+                    <!-- Add more sports as needed -->
+                </select>
         
                 <!-- Dropdown for location filter -->
                 <label for="location">Location:</label>
@@ -48,8 +55,8 @@
         
         
                 <!-- Search button -->
-                
-                <a href="/profile" class="button" role="button">Search</a>
+                <!-- <a href="/profile" class="button" role="button">Search</a> -->
+                 <input type="submit"></input>
 
             </form>
         </div>
