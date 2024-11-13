@@ -37,8 +37,11 @@ const userProfileData = {
       }
     ],
     testimonials: [
-      'good',
-      '1 star'
+      'Fast reply.',
+      '2 stars'
+    ],
+    contact:  [
+      'Contactable via my email or Telegram handle (jane23@gmail.com or @jane23)'
     ]
   }, 
   'John': {
@@ -46,6 +49,7 @@ const userProfileData = {
     listings: [
       {
         name: 'Tube of balls [Renting for 8 months]',
+        description: '12 balls',
         imgUrl: '/images/tennis.jpg'
       }
     ]
