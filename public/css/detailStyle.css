@@ -29,6 +29,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 overflow: hidden;
 width: 300px;
 text-align: center;
+margin-top: 20px;
 }
 
 .card img {
@@ -37,7 +38,7 @@ height: auto;
 }
 
 .card-content {
-padding: 16px;
+padding: 10px;
 }
 
 .card-content h2 {

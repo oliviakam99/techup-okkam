@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
     <link rel="stylesheet" href="/css/searchStyle.css" >
     <link rel="stylesheet" href="/css/navBarStyle.css" >
+    <link rel="stylesheet" href="/css/profile.css" >
 
 
     <!-- Google tag (gtag.js) -->
@@ -28,18 +29,29 @@
     <%- include('../partials/navbar'); %>
   <div class="container">
 
-    <div class="search-container">
-
-        <% for(let i=0; i<sportsToUser[sportName]?.length; i++) { %>
-            <% let user = sportsToUser[sportName][i]; %> 
-            <a href="profile?name=<%= userProfileData[user].name %>" target="_blank"><%= userProfileData[user].name %></h1></a>
-            <% for(let i=0; i<userProfileData[user].listings.length; i++) { %>
-                <p><%= userProfileData[user].listings[i].name %></p>
-                <img src="<%= userProfileData[user].listings[i].imgUrl %>" alt="Tennis Shoes" width="400">
+        <div class="row">
+            <% for(let i=0; i<sportsToUser[sportName]?.length; i++) { %>
+                <div class="column" style="background-color:#aaa;">
+                <div class="search-container">
+                    <% let user = sportsToUser[sportName][i]; %> 
+                    <a href="profile?name=<%= userProfileData[user].name %>" target="_blank"><h1><%= userProfileData[user].name %></h1></a>
+                    <% for(let i=0; i<userProfileData[user].listings.length; i++) { %>
+                        <% if (userProfileData[user].listings[i].category == sportName) { %> 
+                            <p><%= userProfileData[user].listings[i].name %></p>
+                            <img src="<%= userProfileData[user].listings[i].imgUrl %>" width="400">
+                        <% } %>
+                    <% } %>
+                </div>
+                </div>
             <% } %>
-        <% } %>
+            <!-- <div class="column" style="background-color:#aaa;">
+                <h2>Column 1</h2>
+                <p>Some text..</p>
+            </div> -->
+        </div>
+
+        
            
-    </div>
     </div>
         
 </body>

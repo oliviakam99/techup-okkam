@@ -21,7 +21,7 @@ const prisma = new PrismaClient();
 
 const sportsToUser = {
   'Tennis': ['Jane', 'John'],
-  'Pickleball': ['Tim'],
+  'Pickleball': ['Tim', 'Jane'],
   'Golf' : ['Natalie', 'Joshua'],
   'Surfboarding': ['Elijah']
 
@@ -29,25 +29,36 @@ const sportsToUser = {
 const userProfileData = {
   'Jane': {
     name: 'Jane',
+    rating: "3/5",
     listings: [
       {
+        category: "Tennis",
         name: 'Tennis Racket [Renting for 10 months]',
         description: 'Brand: Dunlop CX 200 Tour 18x20',
         imgUrl: '/images/tennis.jpg'
-      }
+      },
+      {
+        category: "Pickleball",
+        name: 'Pickleball [Renting for 10 months]',
+        description: 'Brand: Dunlop CX 200 Tour 18x20',
+        imgUrl: '/images/tennis.jpg'
+      },
     ],
     testimonials: [
       'Fast reply.',
       '2 stars'
     ],
-    contact:  [
-      'Contactable via my email or Telegram handle (jane23@gmail.com or @jane23)'
-    ]
+    contact: {
+      message: 'Contactable via my email or Telegram handle',
+      email: 'jane23@gmail.com',
+      telegram: 'jane23'
+    }
   }, 
   'John': {
     name: 'John',
     listings: [
       {
+        category: "Tennis",
         name: 'Tube of balls [Renting for 8 months]',
         description: '12 balls',
         imgUrl: '/images/tennis.jpg'
@@ -58,6 +69,7 @@ const userProfileData = {
     name: 'Tim',
     listings: [
       {
+        category: "Pickleball",
         name: 'Pickleball paddle (Pro Elongated Control) and 12 balls [Renting for 6 months]',
         imgUrl:'/images/pickleball.jpg'
       }
@@ -149,6 +161,7 @@ app.get('/new', function(req, res) {
 app.get('/search_results', function(req, res) {
   const sportName = req.query['sport-name'];
   const location = req.query['location'];
+  console.log(sportName)
   res.render('pages/search_results', { sportName, location, sportsToUser, userProfileData});
 });
 
