@@ -23,7 +23,7 @@ const sportsToUser = {
   'Tennis': ['Jane', 'John'],
   'Pickleball': ['Tim', 'Jane'],
   'Golf' : ['Natalie', 'Joshua'],
-  'Surfboarding': ['Elijah']
+  'Surfboarding': ['Elijah','John']
 
 }
 const userProfileData = {
@@ -39,9 +39,9 @@ const userProfileData = {
       },
       {
         category: "Pickleball",
-        name: 'Pickleball [Renting for 10 months]',
+        name: '12 balls [Renting for 10 months]',
         description: 'Brand: Dunlop CX 200 Tour 18x20',
-        imgUrl: '/images/tennis.jpg'
+        imgUrl: '/images/pickleballtube.jpg'
       },
     ],
     testimonials: [
@@ -56,51 +56,107 @@ const userProfileData = {
   }, 
   'John': {
     name: 'John',
+    rating: "3/5",
     listings: [
       {
         category: "Tennis",
         name: 'Tube of balls [Renting for 8 months]',
         description: '12 balls',
-        imgUrl: '/images/tennis.jpg'
+        imgUrl: '/images/tennisballtube.jpg'
+      
+      },
+      {
+        category: "Surfboarding",
+        name: 'Wetsuit (size L) [Renting for 1 year]',
+        imgUrl: '/images/wetsuit.jpg'
       }
-    ]
+    ],
+    testimonials: [
+      'Efficient service.'
+    ],
+    contact: {
+      message: 'Contactable via my email or Telegram handle',
+      email: 'johndoe@gmail.com',
+      telegram: 'johndoe'
+    }
   },
   'Tim': {
     name: 'Tim',
+    rating: '5/5',
     listings: [
       {
         category: "Pickleball",
-        name: 'Pickleball paddle (Pro Elongated Control) and 12 balls [Renting for 6 months]',
+        name: 'Pickleball paddle (Pro Elongated Control) [Renting for 6 months]',
         imgUrl:'/images/pickleball.jpg'
       }
-    ]
+    ],
+    testimonials: [
+      'Great service and very easy to talk to!',
+      'Love how good his equipment are. Handy man!'
+    ],
+    contact: {
+      message: 'Contactable via my email or Telegram handle',
+      email: 'timmyturner@gmail.com',
+      telegram: 'timmyturner'
+    }
   },
   'Natalie': {
     name:'Natalie',
+    rating: "4/5",
     listings: [
       {
+        category: "Golf",
         name: 'Golf clubs and tees [Renting for 6 months]',
         imgUrl:'/images/golfclubs.jpg'
       }
-    ]
+    ],
+    testimonials: [
+      'Fast reply.',
+      '3 stars'
+    ],
+    contact: {
+      message: 'Contactable via my email or Telegram handle',
+      email: 'nattobeans@gmail.com',
+      telegram: 'nattobeans'
+    }
   },
   'Joshua': {
     name: 'Joshua',
+    rating: "4/5",
     listings: [
       {
+        category: "Golf",
         name: 'Golf putter [Renting for 4 months]',
         imgUrl: 'images/golfputter.jpg'
       }
-    ]
+    ],
+    testimonials: [
+      'Great to talk to, good exchange of services.'
+    ],
+    contact: {
+      message: 'Contactable via my email or Telegram handle',
+      email: 'joshuatheking@gmail.com',
+      telegram: 'joshuatheking'
+    }
   },
   'Elijah': {
     name: 'Elijah',
+    rating: '2/5',
     listings: [
       {
+        category: "Surfboarding",
         name: 'Surfboard [Renting for 1 year]',
         imgUrl: 'images/surfboard.jpg'
       }
-    ]
+    ],
+    testimonials: [
+      'Still a new user, can be better.'
+    ],
+    contact: {
+      message: 'Contactable via my email or Telegram handle',
+      email: 'elijah45@gmail.com',
+      telegram: 'elijah45'
+    }
   }
 }
 
