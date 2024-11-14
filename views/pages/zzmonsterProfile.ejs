@@ -53,9 +53,9 @@ function remove() {
 <div class="row">
     <div class="column">
         <div class="profile-container">
-            <h1>Profile: <%= profileName %> </h1>
+            <h1><u>Profile Name: <%= profileName %> </u></h1>
             <h2><span class="rating-score">Rating: <%= userProfileData[profileName].rating %></span></h2>
-            <h2>Listings</h2>
+            <h2>Listings:</h2>
             <div class="listings">
                 <% for(let i=0; i<userProfileData[profileName].listings.length; i++) { %>
                     <div class="card">
@@ -67,14 +67,14 @@ function remove() {
                     </div>
                 <% } %>
             </div>
-            <h2>Testimonials</h2>
+            <h2>Testimonials:</h2>
             <ul class="testimonials">
                 <% for(let i=0; i<userProfileData[profileName].testimonials.length; i++) { %>
                     <li><%= userProfileData[profileName].testimonials[i] %></li>
                 <% } %>
             </ul>
         
-            <h2>Contact Me</h2>
+            <h2>Contact Me:</h2>
             <p> <%= userProfileData[profileName].contact.message %> (<a href=<%= userProfileData[profileName].contact.email %>><%= userProfileData[profileName].contact.email %> </a> OR <a href="https://t.me/<%= userProfileData[profileName].contact.telegram %>>" target="_blank">@<%= userProfileData[profileName].contact.telegram %></a>)</p>
         
         </div>

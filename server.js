@@ -40,7 +40,7 @@ const userProfileData = {
       {
         category: "Pickleball",
         name: '12 balls [Renting for 10 months]',
-        description: 'Price: $30',
+        description: 'Price: $2',
         imgUrl: '/images/pickleballtube.jpg'
       },
     ],
@@ -60,8 +60,8 @@ const userProfileData = {
     listings: [
       {
         category: "Tennis",
-        name: 'Tube of balls [Renting for 8 months]',
-        description: 'Price: $1, 12 balls',
+        name: 'Tube of balls (12 balls) [Renting for 8 months]',
+        description: 'Price: $1',
         imgUrl: '/images/tennisballtube.jpg'
       
       },
