@@ -57,19 +57,56 @@ body {
 .info-box {
     width: 45%;
 }
-.info-box img {
+/*.info-box img {
     width: 50px;
     height: auto;
     display: block;
     margin-bottom: 10px;
+}*/
+
+.left-box {
+    width:100px;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.right-box {
+    width: 140px;
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .info-box h3 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
+    text-align: center;
 }
 .info-box p {
     font-size: 14px;
     color: #666;
+    text-align: center;
 }
-
+.offset-top {
+    position: absolute;
+    top:50px;
+    left: 50px;
+    width: 100%;
+}
+.left-decor {
+    float: left;
+    width: 160px;
+    height: auto;
+    margin-left: 30%;
+}
+.right-decor {
+    float: right;
+    width: 160px;
+    height: auto;
+    margin-right: 30%;
+}

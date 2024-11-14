@@ -17,7 +17,6 @@
     clear: both;
   }
 
-/* submit button 
   .submit-link {
     display: inline-block;
     margin-top: 10px;
@@ -31,6 +30,16 @@
 
 .submit-link:hover {
     background-color: #0056b3;
+}
+
+.bg{
+  background-image: url('/images/courtbackground.jpg');
+  background-size: cover;
+}
+
+.img-clip{
+  height: 250px;
+  overflow: hidden;
 }
 
   

@@ -34,13 +34,13 @@ const userProfileData = {
       {
         category: "Tennis",
         name: 'Tennis Racket [Renting for 10 months]',
-        description: 'Brand: Dunlop CX 200 Tour 18x20',
+        description: 'Price: $30',
         imgUrl: '/images/tennis.jpg'
       },
       {
         category: "Pickleball",
         name: '12 balls [Renting for 10 months]',
-        description: 'Brand: Dunlop CX 200 Tour 18x20',
+        description: 'Price: $30',
         imgUrl: '/images/pickleballtube.jpg'
       },
     ],
@@ -49,9 +49,9 @@ const userProfileData = {
       '2 stars'
     ],
     contact: {
-      message: 'Contactable via my email or Telegram handle',
+      message: 'Contactable via my email or Telegram handle. Available to play together as well!',
       email: 'jane23@gmail.com',
-      telegram: 'jane23'
+      telegram: 'jane23',
     }
   }, 
   'John': {
@@ -61,13 +61,14 @@ const userProfileData = {
       {
         category: "Tennis",
         name: 'Tube of balls [Renting for 8 months]',
-        description: '12 balls',
+        description: 'Price: $1, 12 balls',
         imgUrl: '/images/tennisballtube.jpg'
       
       },
       {
         category: "Surfboarding",
         name: 'Wetsuit (size L) [Renting for 1 year]',
+        description: 'Price: $40',
         imgUrl: '/images/wetsuit.jpg'
       }
     ],
@@ -87,6 +88,7 @@ const userProfileData = {
       {
         category: "Pickleball",
         name: 'Pickleball paddle (Pro Elongated Control) [Renting for 6 months]',
+        description: 'Price:$10',
         imgUrl:'/images/pickleball.jpg'
       }
     ],
@@ -95,9 +97,10 @@ const userProfileData = {
       'Love how good his equipment are. Handy man!'
     ],
     contact: {
-      message: 'Contactable via my email or Telegram handle',
+      message: 'Contactable via my email or Telegram handle. Available to play together as well!',
       email: 'timmyturner@gmail.com',
-      telegram: 'timmyturner'
+      telegram: 'timmyturner',
+      
     }
   },
   'Natalie': {
@@ -107,6 +110,7 @@ const userProfileData = {
       {
         category: "Golf",
         name: 'Golf clubs and tees [Renting for 6 months]',
+        description: 'Price: $20',
         imgUrl:'/images/golfclubs.jpg'
       }
     ],
@@ -127,6 +131,7 @@ const userProfileData = {
       {
         category: "Golf",
         name: 'Golf putter [Renting for 4 months]',
+        description: 'Price: $45',
         imgUrl: 'images/golfputter.jpg'
       }
     ],
@@ -146,6 +151,7 @@ const userProfileData = {
       {
         category: "Surfboarding",
         name: 'Surfboard [Renting for 1 year]',
+        description: 'Price: $40',
         imgUrl: 'images/surfboard.jpg'
       }
     ],
@@ -153,7 +159,7 @@ const userProfileData = {
       'Still a new user, can be better.'
     ],
     contact: {
-      message: 'Contactable via my email or Telegram handle',
+      message: 'Contactable via my email or Telegram handle. Looking for a partner to play together as well!',
       email: 'elijah45@gmail.com',
       telegram: 'elijah45'
     }

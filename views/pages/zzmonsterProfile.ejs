@@ -48,10 +48,10 @@ function remove() {
 </script>
 
 </head>
-<body>
+<body class="bg">
 
 <div class="row">
-    <div class="column" style="background-color:#ffffff;">
+    <div class="column">
         <div class="profile-container">
             <h1>Profile: <%= profileName %> </h1>
             <h2><span class="rating-score">Rating: <%= userProfileData[profileName].rating %></span></h2>
@@ -61,6 +61,7 @@ function remove() {
                     <div class="card">
                         <div class="card-content">
                             <p><%= userProfileData[profileName].listings[i].name %></p>
+                            <div class="profile-description"><%= userProfileData[profileName].listings[i].description %></div>
                             <img src="<%= userProfileData[profileName].listings[i].imgUrl %>" alt="Tennis Shoes" width="400">
                         </div>
                     </div>
@@ -78,10 +79,10 @@ function remove() {
         
         </div>
     </div>
-    <div class="column" style="background-color:#ffffff;">
-        <div class="card">
-            <h1>Rate Me:</h1>
-            <br />
+    <div class="column">
+        <div class="card rating-container">
+            <div class="column"><h4>Rate Me:</h4></div>
+            <div class="rating-star-container column">
             <span onclick="gfg(1)"
                   class="star">★
             </span>
@@ -97,6 +98,7 @@ function remove() {
             <span onclick="gfg(5)"
                   class="star">★
             </span>
+            </div>
             <!-- <h3 id="output">
                   Rating is: 0/5
               </h3> -->

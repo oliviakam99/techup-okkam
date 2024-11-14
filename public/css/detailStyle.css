@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color:#faecd2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@ body {
 
 h1 {
 color: #333;
-text-align: center;
+text-align: left;
 }
 
 .container {
@@ -65,4 +65,10 @@ transition: background-color 0.3s;
 
 .submit-link:hover {
 background-color: #0056b3;
+}
+.rating-container h4{
+    margin-bottom: 2px;
+    margin-top: 2px;
+    text-align: right
+    
 }

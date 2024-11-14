@@ -23,24 +23,28 @@
 
 </head> 
 
-<body>
+<body style="background-image: url('/images/bg-<%= sportName %>.jpg');">
 
     <!-- Navbar which can be reused across other pages -->
     <%- include('../partials/navbar'); %>
   <div class="container">
-
+        <div class="row">
+            <h1 class="center"><%= sportName %> </h1>
+        </div>
         <div class="row">
             <% for(let i=0; i<sportsToUser[sportName]?.length; i++) { %>
-                <div class="column" style="background-color:#aaa;">
+                <div class="column">
                 <div class="search-container">
                     <% let user = sportsToUser[sportName][i]; %> 
                     <a href="profile?name=<%= userProfileData[user].name %>" target="_blank"><h1><%= userProfileData[user].name %></h1></a>
                     <% for(let i=0; i<userProfileData[user].listings.length; i++) { %>
                         <% if (userProfileData[user].listings[i].category == sportName) { %> 
                             <p><%= userProfileData[user].listings[i].name %></p>
+                            <div class="profile-description"><%= userProfileData[user].listings[i].description %></div>
+                            <div class="img-clip">
                             <img src="<%= userProfileData[user].listings[i].imgUrl %>" width="400">
-                            
-                           <!---- <a href="hhttps://forms.gle/bmvTy13U52tpffSh7" class="submit-link" target="_blank"></a> -->
+                            </div>
+                           <a href="https://forms.gle/q6VL3Rp1jBe866Lm8" class="submit-link" target="_blank">Submit your interest</a>
                            
                         <% } %>
                     <% } %>
