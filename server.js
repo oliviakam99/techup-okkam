@@ -34,13 +34,13 @@ const userProfileData = {
       {
         category: "Tennis",
         name: 'Tennis Racket [Renting for 10 months]',
-        description: 'Price: $30',
+        description: 'Price: $30, Pickup: Jurong East MRT',
         imgUrl: '/images/tennis.jpg'
       },
       {
         category: "Pickleball",
         name: '12 balls [Renting for 10 months]',
-        description: 'Price: $2',
+        description: 'Price: $2, Pickup: AMK hub',
         imgUrl: '/images/pickleballtube.jpg'
       },
     ],
@@ -61,14 +61,14 @@ const userProfileData = {
       {
         category: "Tennis",
         name: 'Tube of balls (12 balls) [Renting for 8 months]',
-        description: 'Price: $1',
+        description: 'Price: $1, Pickup: JEM',
         imgUrl: '/images/tennisballtube.jpg'
       
       },
       {
         category: "Surfboarding",
         name: 'Wetsuit (size L) [Renting for 1 year]',
-        description: 'Price: $40',
+        description: 'Price: $40, Pickup: Tampines MRT',
         imgUrl: '/images/wetsuit.jpg'
       }
     ],
@@ -88,7 +88,7 @@ const userProfileData = {
       {
         category: "Pickleball",
         name: 'Pickleball paddle (Pro Elongated Control) [Renting for 6 months]',
-        description: 'Price:$10',
+        description: 'Price: $10, Pickup: Hougang MRT',
         imgUrl:'/images/pickleball.jpg'
       }
     ],
@@ -110,7 +110,7 @@ const userProfileData = {
       {
         category: "Golf",
         name: 'Golf clubs and tees [Renting for 6 months]',
-        description: 'Price: $20',
+        description: 'Price: $20, Pickup: ION mall',
         imgUrl:'/images/golfclubs.jpg'
       }
     ],
@@ -131,7 +131,7 @@ const userProfileData = {
       {
         category: "Golf",
         name: 'Golf putter [Renting for 4 months]',
-        description: 'Price: $45',
+        description: 'Price: $45, Pickup: Great World City',
         imgUrl: 'images/golfputter.jpg'
       }
     ],
@@ -151,7 +151,7 @@ const userProfileData = {
       {
         category: "Surfboarding",
         name: 'Surfboard [Renting for 1 year]',
-        description: 'Price: $40',
+        description: 'Price: $40, Pickup: ECP',
         imgUrl: 'images/surfboard.jpg'
       }
     ],
